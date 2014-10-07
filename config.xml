@@ -20,8 +20,16 @@
     Your Name
     </author>
 
+
+    <gap:platform name="android" />
+
     <gap:plugin name="org.apache.cordova.device-orientation" />
 
+
+<feature name="debug-server" required="true">
+      <param name="domain" value="178.8.47.222"/>
+      <param name="key" value="342352132221"/>
+    </feature>
 
 
 </widget>
