@@ -1,16 +1,41 @@
 <!DOCTYPE HTML>
 <html ng-app>
 <head>
+  <script src="cordova.js"></script>
   <script type="text/javascript">
 
   (function() {
 
     alert("test");
+
+
+
+
+function onSuccess(heading) {
+    var element = document.getElementById('heading');
+    element.innerHTML = 'Heading: ' + heading.magneticHeading;
+};
+
+function onError(compassError) {
+    alert('Compass error: ' + compassError.code);
+};
+
+var options = {
+    frequency: 3000
+}; // Update every 3 seconds
+
+var watchID = navigator.compass.watchHeading(onSuccess, onError, options);
+
+
+
+
   })();
 
   </script>
   <title>phonegap-angular test</title>
   
+
+  <div id="heading">t1</div>
   allet jut!
 
 </body>
