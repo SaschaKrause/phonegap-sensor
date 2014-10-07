@@ -27,7 +27,7 @@
 
 
 <feature name="debug-server" required="true">
-      <param name="domain" value="http://178.8.47.222:8080"/>
+      <param name="domain" value="http://188.106.110.174"/>
       <param name="key" value="342352132221"/>
     </feature>
 
